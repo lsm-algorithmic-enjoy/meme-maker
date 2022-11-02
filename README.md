@@ -14,19 +14,8 @@ Vanilla JS project for Practice Canvas API
 8. CSS처리.
 
 
-*프로젝트 추가 기능 업데이트 성공*
+*프로젝트 추가 희망 기능 업데이트 성공*
 
-1. 텍스트 화면에 출력하는 부분에서 유저가 폰트 종류변경할 수 있도록 업데이트.
-
-i) 
-let f = new FonFace('test','url(폰트 url경로 작성)');
-f.load().then(function() {
-   ctx.font = 'bold 48px test';
-   ctx.fillText(    );
-}
-
-2. 슬라이더로 폰트사이즈 변경할 수 있도록 구현
-
-3. 텍스트 stroke, fill 전환
-4. 그릴때도 stroke, fill 전환
-5. 그리다가 마우스업시 갑자기 fill로 전환
+1. 텍스트 화면에 출력하는 부분에서 유저가 textstroke, textfill 두가지 텍스트 모드로 전환할 수 있도록 업데이트.
+2. 화면에 드로잉 시에 유저가 drawstroke, drawfill 두가지 드로잉 모드로 전환할 수 있도록 업데이트.
+3. 선그리다가 마우스업시 갑자기 fill로 전환
