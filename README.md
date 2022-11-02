@@ -11,7 +11,7 @@ Vanilla JS project for Practice Canvas API
 5. createObjectURL 메소드를 사용하여 해당 파일의 브라우저 메모리 URL을 알아낼 수 있고 이를 통해 이미지 로드를 하게 만들었음. 
 6. 이후에 ctx.drawImage 메소드를 사용하여 캔버스 면적 크기 만큼의 이미지를 화면에 나타내었음. 
 7. const url = canvas.toDataURL(); 이용하여 캔버스 그림을 URL로 인코딩하여 저장.
-8. CSS처리
+8. CSS처리.
 
 
 *프로젝트 추가 기능 업데이트 성공*
