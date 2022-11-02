@@ -1,4 +1,3 @@
 # Making painting app by using Vanilla JS
 
-Vanilla JS portfolio project
-Practice Canvas API
+Vanilla JS project for Practice Canvas API
