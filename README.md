@@ -15,7 +15,7 @@ Vanilla JS project for Practice Canvas API
 
 
 
-*프로젝트 수정, 희망 기능 추가, 버그 해결 및 업데이트 성공 요약*
+*프로젝트 수정, 희망 기능 추가, 버그 해결 및 업데이트 요약*
 
 1. inputtext를 화면에 나타내는 부분에서 유저가 textstroke, textfill 두가지 텍스트 모드로 전환할 수 있도록 업데이트.
 2. inputtext를 화면에 표시할때 fillscreen 상태인경우 첫 더블클릭시 fillscreen이 먼저 적용되어 inputtext가 화면에 바로 나타나지 않는 버그를 onCanvasClick에 isFilling = false; 추가해서 해결완료. 단, 이로 인해  onCanvasClick은 일회적인 특성을 가지게 되어서 유저가 fillscreen모드를 적용하기 희망할 때마다 매번 fillscreen 버튼을 클릭해야 함. 
