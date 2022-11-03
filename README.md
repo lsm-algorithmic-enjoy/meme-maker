@@ -22,4 +22,4 @@ Vanilla JS project for Practice Canvas API
 3. drawfill버튼과 draw(stroke)버튼을 하나로 통합하였음. 이를 통해 유저가 하나의 버튼에서 두가지 드로잉 모드로 원할 때마다 전환할 수 있도록 업데이트, 그리고 fillscreen 버튼을 따로 분리하여 UI를 개선하였음.
 4. modeBtn각각의 두 케이스(fill, stroke)에 대해서 isfilling = false; 으로 셋팅하여 screenfill 버튼을 누른 유저가 자연스럽게 screenfill상태를 빠져나가 드로잉 모드(fill, stroke)로 전환할 수 있도록 구현하였음. 
 5. erase버튼을 클릭하고 나서 mode버튼(fill,stroke)을 클릭하여 stroke 모드로 다시 전환하려는 경우 eraser 적용후에도 strokeStyle은 지우개색인 하얀색이 아니라 기존 fillStyle과 같은 색상으로 적용해야 하므로 onModeClick에 ctx.strokeStyle = ctx.fillStyle; 추가하여 버그 해결완료.
-6. 5번 경우와 유사하게 eraser버튼을 클릭하면 strokeStyle이 하얀색이 되어버려서 직후에 textstroke 클릭시 유저가 선택한 색상 적용 안되고, 하얀색이 텍스트에 적용이 되버리는 버그가 발생했었는데, onDoubleClick 함수에서 stroke 처리를 담당하는 코드의 save와 restore 사이에 ctx.strokeStyle = ctx.fillStyle; 코드 추가 적용하여 유저가 선택한 색상으로 적용되게 버그 해결완료.
+6. 5번 경우와 유사하게 eraser버튼을 클릭하면 strokeStyle이 하얀색이 되어버려서 직후에 textstroke 클릭시 유저가 선택한 색상 적용 안되고, 하얀색이 텍스트에 적용이 되버리는 버그가 발생했었는데, onDoubleClick 함수에서 stroke 처리를 담당하는 코드의 save와 restore 사이에 ctx.strokeStyle = ctx.fillStyle; 코드 추가 적용하여 유저가 선택한 색상으로 적용되게  버그 해결완료.
