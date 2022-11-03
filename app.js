@@ -101,6 +101,7 @@ function onTextStrokeClick() {
 }
 
 function onDestroyClick() {
+  ctx.strokeStyle = ctx.fillStyle;
   ctx.fillStyle = "white";
   ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   ctx.fillStyle = ctx.strokeStyle;
