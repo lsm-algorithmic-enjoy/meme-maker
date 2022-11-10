@@ -6,7 +6,7 @@ _프로젝트 진행 과정 Key Point 요약_
 
 1. Mouse Event
    </br>
-   mousedown 상태로 캔버스를 빠져나갔을때 캔버스로 돌아오면 클릭을 안하고 있음에도 불구하고 mousedown 상태 유지되는 버그를 mouseleave를 통해 해결하거나, canvas 대신 document에 mouseup 이벤트를 부여해서 버그 해결 가능. (해당 프로젝트에서는 mouseleave 추가로 해결)
+   유저가 mousedown 상태로 캔버스를 빠져나갔다가 캔버스로 돌아오면 클릭을 안하고 있음에도 불구하고 drawing 상태가 그대로 유지되는 버그를 mouseleave를 통해 해결하거나, canvas 대신 document에 mouseup 이벤트를 부여해서 버그 해결 가능. (해당 프로젝트에서는 mouseleave 추가로 해결)
 
 2. forEach 메소드를 통한 addEventListener 적용
    </br>
