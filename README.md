@@ -52,4 +52,4 @@ _프로젝트 업데이트 각 파트별 내용 요약_
 
 3. erase버튼을 클릭하고 나서 mode버튼(fill, stroke)을 클릭하여 stroke 모드로 다시 전환하려는 경우 eraser 적용후에도 strokeStyle은 지우개색인 하얀색이 아니라 기존 fillStyle과 같은 색상으로 적용해야 하므로 onModeClick에 ctx.strokeStyle = ctx.fillStyle; 추가하여 버그 해결완료.
 
-4. 5번 경우와 유사하게 eraser버튼을 클릭하면 strokeStyle이 하얀색이 되어버려서 직후에 textstroke 클릭시 유저가 선택한 색상 적용 안되고, 하얀색이 텍스트에 적용이 되버리는 버그가 발생했었는데, onDoubleClick 함수에서 stroke 처리를 담당하는 코드의 save와 restore 사이에 ctx.strokeStyle = ctx.fillStyle; 코드 추가 적용하여 유저가 선택한 색상으로 적용되게 만들어서 버그 해결완료.
+4. 3번 경우와 유사하게 eraser버튼을 클릭하면 strokeStyle이 하얀색이 되어버려서 직후에 textstroke 클릭시 유저가 선택한 색상 적용 안되고, 하얀색이 텍스트에 적용이 되버리는 버그가 발생했었는데, onDoubleClick 함수에서 stroke 처리를 담당하는 코드의 save와 restore 사이에 ctx.strokeStyle = ctx.fillStyle; 코드 추가 적용하여 유저가 선택한 색상으로 적용되게 만들어서 버그 해결완료.
